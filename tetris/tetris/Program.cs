@@ -13,18 +13,26 @@ namespace tetris
             int y1 = 3;
             char c1 = '*';
 
-            Console.SetCursorPosition(x1, y1);//устанавливает курсор в консоле по заданной координате
-            Console.Write(c1);// записывает символ в консоле
+            Draw(x1, y1, c1);
+            //Console.SetCursorPosition(x1, y1);//устанавливает курсор в консоле по заданной координате
+            //Console.Write(c1);// записывает символ в консоле
 
             int x2 = 2;
             int y2 = 10;
             char c2 = '*';
 
-            Console.SetCursorPosition(x2, y2);//устанавливает курсор в консоле по заданной координате
-            Console.Write(c2);// записывает символ в консоле
+            Draw(x2, y2, c2);
+            //Console.SetCursorPosition(x2, y2);//устанавливает курсор в консоле по заданной координате
+            //Console.Write(c2);// записывает символ в консоле
 
 
             Console.ReadLine(); // перед закрытием консоли дождется нажатия клавиши
+        }
+
+        static void Draw(int x, int y, char c)// функция которая выводит символ по заданным координатам
+        {
+            Console.SetCursorPosition(x, y);
+            Console.Write(c);
         }
     }
 }
