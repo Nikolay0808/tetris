@@ -10,10 +10,7 @@ namespace tetris
             Console.SetBufferSize(40, 30);//убирает полоски прокрутки
 
              
-            Point p1 = new Point();
-            p1.x = 2;
-            p1.y = 3;
-            p1.c = '*';
+            Point p1 = new Point(2,3,'*');
             p1.Draw();
 
             Point p2 = new Point();
@@ -21,6 +18,8 @@ namespace tetris
             p2.y = 10;
             p2.c = '*';
             p2.Draw();
+
+            
 
 
 

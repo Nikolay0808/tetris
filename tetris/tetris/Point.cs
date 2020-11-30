@@ -15,5 +15,14 @@ namespace tetris
             Console.SetCursorPosition(x, y);
             Console.Write(c);
         }
+        public Point(int a, int b, char sym )// Функция конструктор, которая вызывается при создании объекта , имя функци конструктора равно имени класса
+        {
+            x = a;
+            y = b;
+            c = sym;
+        }
+
+        public Point () { }// Функция конструктор, которая вызывается по умолчанию, если нет других конструкторов
+
     }
 }
