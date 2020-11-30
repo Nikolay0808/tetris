@@ -9,30 +9,24 @@ namespace tetris
             Console.SetWindowSize(40, 30); // размер консоли
             Console.SetBufferSize(40, 30);//убирает полоски прокрутки
 
-            int x1 = 2;
-            int y1 = 3;
-            char c1 = '*';
+             
+            Point p1 = new Point();
+            p1.x = 2;
+            p1.y = 3;
+            p1.c = '*';
+            p1.Draw();
 
-            Draw(x1, y1, c1);
-            //Console.SetCursorPosition(x1, y1);//устанавливает курсор в консоле по заданной координате
-            //Console.Write(c1);// записывает символ в консоле
+            Point p2 = new Point();
+            p2.x = 5;
+            p2.y = 10;
+            p2.c = '*';
+            p2.Draw();
 
-            int x2 = 2;
-            int y2 = 10;
-            char c2 = '*';
-
-            Draw(x2, y2, c2);
-            //Console.SetCursorPosition(x2, y2);//устанавливает курсор в консоле по заданной координате
-            //Console.Write(c2);// записывает символ в консоле
 
 
             Console.ReadLine(); // перед закрытием консоли дождется нажатия клавиши
         }
 
-        static void Draw(int x, int y, char c)// функция которая выводит символ по заданным координатам
-        {
-            Console.SetCursorPosition(x, y);
-            Console.Write(c);
-        }
+        
     }
 }
